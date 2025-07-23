@@ -99,7 +99,7 @@ Key packages:
 
 ---
 
-## 🧪 Recommended Workflow
+## Recommended Workflow
 
 1. **Initial Matching**  
    Run `cosine_similarity copy.py` to find top-5 matches for each requirement.
