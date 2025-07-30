@@ -4,7 +4,7 @@ This toolkit helps extract and evaluate **company measures** against sustainabil
 
 ---
 
-## 1. `cosine_similarity copy.py`
+## 1. `cosine_similarity.py`
 
 ### Purpose
 Automatically **match ESG disclosure requirements** to relevant text snippets from an ESG report PDF using a hybrid retrieval pipeline:
@@ -32,7 +32,7 @@ Automatically **match ESG disclosure requirements** to relevant text snippets fr
 ### How to Run
 
 ```bash
-python "cosine_similarity copy.py"
+python "cosine_similarity.py"
 ```
 
 You’ll be prompted for:
@@ -102,7 +102,7 @@ Key packages:
 ## Recommended Workflow
 
 1. **Initial Matching**  
-   Run `cosine_similarity copy.py` to find top-5 matches for each requirement.
+   Run `cosine_similarity.py` to find top-5 matches for each requirement.
 
 2. **Relevance Evaluation + Sentence Extraction**  
    Use `relevancy_checker.py` to filter, score, and extract precise answers.
