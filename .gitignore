@@ -37,7 +37,7 @@ models/
 *.bin
 *.npz
 
-# --- Neo4j local store (if ever spun up) ---
+# --- Neo4j local store ---
 neo4j/data/
 neo4j/logs/
 neo4j/import/
