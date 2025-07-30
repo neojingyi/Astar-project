@@ -1,0 +1,47 @@
+# --- Python bytecode ---
+__pycache__/
+*.py[cod]
+*$py.class
+
+# --- Virtual environments & env files ---
+venv/
+my_rag_env/
+.env
+
+# --- IDE / editor configs ---
+.vscode/
+.idea/
+
+# --- OS cruft ---
+.DS_Store
+Thumbs.db
+
+# --- Jupyter checkpoints ---
+.ipynb_checkpoints/
+
+# --- Logs ---
+*.log
+
+# --- Data & outputs (re-generate as needed) ---
+*.csv
+*.tsv
+*.xls
+*.xlsx
+*.pdf
+match_evaluation.xlsx
+disclosure_matches.xlsx
+
+# --- Model weights, embeddings, caches ---
+models/
+*.pt
+*.bin
+*.npz
+
+# --- Neo4j local store (if ever spun up) ---
+neo4j/data/
+neo4j/logs/
+neo4j/import/
+
+# --- Hugging-Face / Git-LFS pointers ---
+*.lock
+.lfsconfig
