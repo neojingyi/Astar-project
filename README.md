@@ -109,3 +109,20 @@ Key packages:
 
 3. **Graph Ingestion (Optional)**  
    Use final output to populate a Neo4j ESG graph or embed into a vector index.
+
+## Neo4j Graph Visualization
+
+An example of the ESG knowledge graph in Neo4j is contained in the `neo4j` folder, showing how **Disclosure**, **Requirement**, **Measure**, and **Company** nodes are interconnected. Red nodes represent measures, blue nodes represent disclosures, and yellow nodes represent requirements.
+
+![Neo4j ESG Graph Visualization](docs/neo4j_graph_overview.png)
+
+Nodes and relationships can be explored in the Neo4j Browser or Data Importer:
+
+```
+MATCH (d:Disclosure)-[:HAS_REQUIREMENT]->(r:Requirement)
+MATCH (r)-[:ADDRESSED_BY]->(m:Measure)
+MATCH (m)-[:PROVIDED_BY]->(c:Company)
+RETURN d, r, m, c
+```
+
+This graph is also vectorized for semantic search using the Neo4j vector plugin (Enterprise edition 5.11+).
